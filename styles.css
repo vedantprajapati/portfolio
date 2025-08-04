@@ -320,40 +320,23 @@ body {
 }
 
 .profile-card:hover {
-    transform: scale(1.05);
     box-shadow: 0 20px 40px rgba(0, 122, 204, 0.2);
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    border: 3px solid rgba(0, 122, 204, 0.3);
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-    animation: gentleFloat 4s ease-in-out infinite;
 }
 
 .profile-pic {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
     object-fit: cover;
-    border: 2px solid rgba(0, 122, 204, 0.2);
-}
-
-@keyframes gentleFloat {
-    0%, 100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+    border-radius: 8px;
 }
 
 /* Section Styles */
@@ -718,9 +701,20 @@ body {
     }
 }
 
+
+
 /* Floating animation for profile card */
 .profile-card {
-    animation: float 6s ease-in-out infinite;
+    animation: gentleFloat 4s ease-in-out infinite;
+}
+
+@keyframes gentleFloat {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
 }
 
 /* Glow effect for highlight */
