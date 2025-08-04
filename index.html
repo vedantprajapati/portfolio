@@ -1,144 +1,528 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Prajapati - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
 
-<body id="page-top"><a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
-    <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper" style="background-color: rgb(84,84,84);">
-        <div class="container"><button data-toggle="collapse" class="navbar-toggler d-none" data-target="#"></button>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav sidebar-nav" id="sidebar-nav">
-                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
-                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                </ul>
+    <!-- Navigation Arrows -->
+    <div class="nav-arrow prev" id="prev-arrow" data-tooltip="About">
+        <i class="fas fa-chevron-left"></i>
+    </div>
+    <div class="nav-arrow next" id="next-arrow" data-tooltip="Experience">
+        <i class="fas fa-chevron-right"></i>
+    </div>
+    <div class="nav-arrow up" id="up-arrow" data-tooltip="Projects">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <div class="nav-arrow down" id="down-arrow" data-tooltip="Skills">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <!-- Contact Popup Bubble -->
+    <div class="contact-bubble" id="contact-bubble">
+        <div class="contact-bubble-icon">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div class="contact-bubble-content">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:vedant.prajapati@outlook.com">vedant.prajapati@outlook.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/-ved/" target="_blank">linkedin.com/in/-ved/</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/vedantprajapati" target="_blank">github.com/vedantprajapati</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-file-alt"></i>
+                <a href="https://drive.google.com/file/d/1SCsPVb2wsFguslsFilG_VN2WTWMIEQjT/view" target="_blank">Resume.pdf</a>
             </div>
         </div>
-    </nav>
-    <header class="d-flex masthead" style="background-image: url(&quot;assets/img/453f143ad31ed8482ebed9c4084b8059.jpg&quot;);">
-        <div class="container my-auto text-center">
-            <h1 class="mb-1"><img class="border rounded-circle" src="assets/img/1583427275112.jpg" style="width: 150px;">&nbsp;Hi, I'm Vedant!</h1>
-            <h3 class="mb-5"><em class="text-center"><br>Electrical and Computer Engineer | University of Toronto<br></em></h3>
-            <div class="overlay"></div>
-        </div>
-    </header>
-    <section id="about" class="content-section bg-light" style="background-color: rgb(47,47,47);">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h2>Who am I</h2>
-                    <p class="lead mb-5"><span><br><strong><em>I am a Software Engineer, Developer and Student studying Electrical and Computer Engineering at the University of Toronto with minors in AI and Business. I love to collaborate and solve complex issues in software design and robotics. Below are some personal projects I have done as well as more about me!</em></strong><br><br></span></p>
-                    <a
-                        class="btn btn-dark btn-xl js-scroll-trigger" role="button" href="https://drive.google.com/file/d/1JXQ2xoiH04MlKatdAT_dTeNu2UEf-Q0j/view?usp=sharing">Resume</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="portfolio" class="content-section">
-        <div class="container">
-            <div class="content-section-heading text-center">
-                <h3 class="text-primary mb-0" style="color: rgb(79,170,255);">Portfolio</h3>
-                <h2 class="mb-5">Recent Projects</h2>
-            </div>
-            <div class="row no-gutters">
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://github.com/vedantprajapati/SeeMySort">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>SeeMySort</h2>
+    </div>
+
+    <!-- Slide Container -->
+    <div class="slide-container">
+        <!-- Hero Slide -->
+        <div class="slide active hero-slide" data-slide="0">
+            <div class="slide-content">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Hi, I'm Vedant Prajapati</h1>
+                        <p class="hero-subtitle">Software Engineer & Computer Engineering Graduate</p>
+                        <p class="hero-description">
+                            As a Full Stack Developer, I build robust applications using Python and React with TypeScript, 
+                            and excel at managing the complete software development lifecycle. I have significant experience 
+                            leveraging Terraform to orchestrate the deployment and continuous management of complex systems 
+                            within Kubernetes clusters, creating automation workflows and core features.
+                        </p>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <i class="fas fa-user"></i>
                             </div>
-                        </div><img class="img-fluid" src="assets/img/Screenshot_3.png" style="padding: 0;height: 262px;"></a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://github.com/vedantprajapati/My-Guy-Bot">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>Myguybot</h2>
-                            </div>
-                        </div><img class="img-fluid" src="assets/img/discord-logo.jpg" style="background-color: #1;margin: 0px;"></a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://github.com/vedantprajapati/VDatabase">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>vdatabase</h2>
-                            </div>
-                        </div><img class="img-fluid d-lg-flex align-items-center align-content-center align-self-center mx-auto" src="assets/img/image_4.jpg" style="height: 262px;"></a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://github.com/vedantprajapati/Beat_Saber_Map_Generator_APS360_Project">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>beat saber map generator</h2>
-                            </div>
-                        </div><img class="img-fluid" src="assets/img/ezgif.com-gif-maker.gif"></a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="https://github.com/vedantprajapati/React-Scheduler">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>react scheduler</h2>
-                            </div>
-                        </div><img class="img-fluid" src="assets/img/scheduler.jpg" style="height: 271px;"></a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>Simplemaps - Open streets maps GIS</h2>
-                            </div>
-                        </div><img class="img-fluid" src="assets/img/image_2.gif"></a>
-                </div>
-                <div class="col-lg-6"><a class="portfolio-item" href="https://github.com/vedantprajapati/Sustainify"><img class="img-fluid" src="assets/img/image_6.jpg" style="height: 349px;"><div class="caption"><div class="caption-content"><h2>sustainify</h2><p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p></div></div></a></div>
-                <div
-                    class="col-lg-6">
-                    <a class="portfolio-item" href="https://github.com/vedantprajapati/GuitarHeroECE243Team75">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>Guitar hero for de1-soc</h2>
-                            </div>
-                        </div><img class="img-fluid" src="assets/img/image_3.gif"></a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="https://devpost.com/software/smarttrash" style="padding: 0;">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h2>smart waste automation system</h2>
-                            <p class="mb-0"><br>Designed a connected waste management system which relays volume and weight to be sent live to server. <br></p>
                         </div>
-                    </div><img class="img-fluid" src="assets/img/image_7.jpg" style="height: 348px;"></a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="https://github.com/vedantprajapati/Workspace-Loader">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h2>workspace loader</h2>
+        </div>
+
+        <!-- About Slide -->
+        <div class="slide about-slide" data-slide="1">
+            <div class="slide-content">
+                <div class="container">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>
+                                I am a Software Engineer with a background in Computer Engineering from the University of Toronto 
+                                with a minor in business. I love to collaborate and solve complex issues in software design and Data Analytics.
+                            </p>
+                            <p>
+                                Currently working as a Software Developer at Geotab, where I orchestrate deployments, 
+                                manage Apache Superset clusters, and spearhead comprehensive code upgrades and refactoring efforts.
+                            </p>
+                            <div class="about-stats">
+                                <div class="stat">
+                                    <h3>3+</h3>
+                                    <p>Years Industry Experience</p>
+                                </div>
+                                <div class="stat">
+                                    <h3>15+</h3>
+                                    <p>Projects Completed</p>
+                                </div>
+                            </div>
                         </div>
-                    </div><img class="img-fluid" src="assets/img/image_5.gif"></a>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Experience Slide -->
+        <div class="slide experience-slide" data-slide="2">
+            <div class="slide-content">
+                <div class="container">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="experience-grid">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h3>Software Developer - Data/AI Platform</h3>
+                                <span class="company">Geotab</span>
+                                <span class="duration">July 2023 - Present (3+ years)</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Orchestrated the deployment and continuous management of Apache Superset using Terraform and ArgoCD, improving application stability and deployment speed by 20%</li>
+                                <li>Spearheaded the critical upgrade of Apache Superset from version 1.5 to 5.1, integrating CloudSQL, MemoryStore, and Artifact Registry, resulting in 40% boost in system performance</li>
+                                <li>Enhanced application stability by developing an AI agentic support bot, leading to 20% decrease in support tickets and 20% reduction in query slot usage</li>
+                                <li>Successfully managed the release and deployment cycle of Dekart, an internal map data visualization tool</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h3>Software Developer - Data/AI Platform</h3>
+                                <span class="company">Geotab</span>
+                                <span class="duration">September 2021 - August 2022 (1 year)</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Deployed and Monitored Apache Superset on Kubernetes using Helm and Docker for company-wide business intelligence tool</li>
+                                <li>Implemented GBQ impersonation, alerting/reporting, and RBAC features for secure data querying and report retrieval</li>
+                                <li>Created an Airflow data pipeline templating system on Google Cloud Composer to simplify DAG creation and deployment time</li>
+                                <li>Designed tests and custom CI/CD pipeline for GEOTAB's Airflow deployment manager, achieving 40% increase in test coverage</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h3>Electronics Engineer</h3>
+                                <span class="company">University of Toronto Hyperloop Team</span>
+                                <span class="duration">September 2019 - August 2021 (2 years)</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Tested and implemented IMUs for the Canadian SpaceX Hyperloop Pod Competition</li>
+                                <li>Developed C/Arduino tests to validate electronic component accuracy (velocity, acceleration, temperature) with < 0.3% margin of error</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h3>Computer Hardware Technician</h3>
+                                <span class="company">CDI Technologies</span>
+                                <span class="duration">May 2019 - August 2019 (4 months)</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Performed data destruction and managed information confidentiality of industry scale server systems with Linux shell scripting and PSQL</li>
+                                <li>Worked as onsite technician for TDSB to set up 1800 computer systems to support EQAO assessment for 250,000 students</li>
+                                <li>Saved $6000 by implementing new process roadmap to prevent damage of functional server systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <footer class="footer text-center">
+
+        <!-- Projects Slide -->
+        <div class="slide projects-slide" data-slide="3">
+            <div class="slide-content">
+                <div class="container">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="projects-grid" id="projects-grid">
+                        <div class="project-card featured-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h3>Encapsulate</h3>
+                            </div>
+                            <p class="project-description">
+                                A CLI-based web app that helps users manage their daily routines and tasks. Features Google Calendar integration, workout plans, to-do lists, and habit tracking with Nier Automata-inspired interface.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">GCP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vedantprajapati/Encapsulate" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card featured-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3>Education Pathways</h3>
+                            </div>
+                            <p class="project-description">
+                                University of Toronto Course Selection Tool. Interactive web application to help students explore academic pathways and career opportunities with course list sharing features.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Flask</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vedantprajapati/Education-Pathways" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card featured-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-dumbbell"></i>
+                                </div>
+                                <h3>Toronto Fitness Club</h3>
+                            </div>
+                            <p class="project-description">
+                                Fitness Studio Platform that allows users to create accounts and subscribe to desired courses. Features Django admin panel for studio, class, and staff management.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vedantprajapati/CSC309-Labs-Web-Development/tree/main/Toronto%20Fitness%20Club%20Frontend/PF-group_10905" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card featured-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                                <h3>Beat Saber Map Generator</h3>
+                            </div>
+                            <p class="project-description">
+                                RNN Regression Based Game Level Generator using PyTorch and deep learning LSTM. Trained on 10,000 beatmaps with audio analysis using LibROSA.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">LSTM</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vedantprajapati/Beat_Saber_Map_Generator_APS360_Project" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card featured-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h3>Discord Audio Bot</h3>
+                            </div>
+                            <p class="project-description">
+                                A Discord bot that plays YouTube videos, saves/replays user-specified clips, and creates new commands using Discord API and FFmpeg with Flask web server.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">Discord API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vedantprajapati/My-Guy-Bot" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card featured-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h3>VDatabase</h3>
+                            </div>
+                            <p class="project-description">
+                                A concurrent database created from scratch using Multithreading, Polymorphism, and C++ Variadic Templates. Features ORM Layer, Rust server, and RPC Framework for horizontal scalability.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Rust</span>
+                                <span class="tech-tag">RPC</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vedantprajapati/VDatabase" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-map"></i>
+                                </div>
+                                <h3>Geographic Information System</h3>
+                            </div>
+                            <p class="project-description">
+                                Location Mapping System with graphical interface to display points of interests. Implements Dijkstra's, polygon area, and greedy paths algorithms for optimized directions.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Algorithms</span>
+                                <span class="tech-tag">Graphics</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <h3>Car Logger</h3>
+                            </div>
+                            <p class="project-description">
+                                OpenCV-based traffic analysis system to detect cars on highway, identify each car with ID, and calculate speed using Euclidean distance from camera perspective.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Computer Vision</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h3>Sustainify</h3>
+                            </div>
+                            <p class="project-description">
+                                Event management and ticketing platform for sustainability events. Features community cleanups, workshops, tree planting with Google Maps API integration.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vedantprajapati/Sustainify" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-guitar"></i>
+                                </div>
+                                <h3>Guitar Hero</h3>
+                            </div>
+                            <p class="project-description">
+                                A guitar hero game coded in C assembly for the De1-SoC board with real-time audio processing and interactive gameplay.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Assembly</span>
+                                <span class="tech-tag">Hardware</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vedantprajapati/GuitarHeroECE243Team75" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card hidden-project">
+                            <div class="project-header">
+                                <div class="project-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h3>Workspace Loader</h3>
+                            </div>
+                            <p class="project-description">
+                                An application that automatically loads specified apps all at once, to let user start work as soon as they can.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Automation</span>
+                                <span class="tech-tag">Productivity</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/vedantprajapati/Workspace-Loader" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Slide -->
+        <div class="slide skills-slide" data-slide="4">
+            <div class="slide-content">
+                <div class="container">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Languages</h3>
+                            <div class="skill-items">
+                                <span class="skill-item">Python</span>
+                                <span class="skill-item">JavaScript</span>
+                                <span class="skill-item">TypeScript</span>
+                                <span class="skill-item">C++</span>
+                                <span class="skill-item">C</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Frameworks & Technologies</h3>
+                            <div class="skill-items">
+                                <span class="skill-item">React</span>
+                                <span class="skill-item">Django</span>
+                                <span class="skill-item">PostgreSQL</span>
+                                <span class="skill-item">MongoDB</span>
+                                <span class="skill-item">Redis</span>
+                                <span class="skill-item">CloudSQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Cloud & Infrastructure</h3>
+                            <div class="skill-items">
+                                <span class="skill-item">Kubernetes</span>
+                                <span class="skill-item">Helm</span>
+                                <span class="skill-item">GCP</span>
+                                <span class="skill-item">Terraform</span>
+                                <span class="skill-item">ArgoCD</span>
+                                <span class="skill-item">Docker</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Testing & Tools</h3>
+                            <div class="skill-items">
+                                <span class="skill-item">Jenkins</span>
+                                <span class="skill-item">Selenium</span>
+                                <span class="skill-item">Cypress</span>
+                                <span class="skill-item">Jest</span>
+                                <span class="skill-item">Pytest</span>
+                                <span class="skill-item">Airflow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Slide -->
+        <div class="slide contact-slide" data-slide="5">
+            <div class="slide-content">
+                <div class="container">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <h3>Let's work together!</h3>
+                            <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just want to say hello.</p>
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>vedant.prajapati@outlook.com</span>
+                                </div>
+                                <div class="contact-method">
+                                    <i class="fas fa-phone"></i>
+                                    <span>647-988-5771</span>
+                                </div>
+                                <div class="contact-method">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Toronto, ON, Canada</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/vedantprajapati" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/vedantprajapati/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://drive.google.com/file/d/1SCsPVb2wsFguslsFilG_VN2WTWMIEQjT/view?usp=drive_link" class="social-link"><i class="fas fa-file-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <ul class="list-inline mb-5">
-                <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="#"><i class="icon-social-linkedin"></i></a></li>
-                <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="mailto:vedant.prajapati@mail.utoronto.ca"><i class="icon-envelope"></i></a></li>
-                <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="#"><i class="icon-social-github"></i></a></li>
-            </ul>
-        </div><a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a></footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/stylish-portfolio.js"></script>
+            <p>&copy; 2025 Vedant Prajapati. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
-</html>
+</html> 
